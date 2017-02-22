@@ -6,7 +6,7 @@ import (
 
 
 func main() {
-	power := 9000
+	name, power := "Matt", 9000
 
-	fmt.Printf("It's over %d\n", power)
+	fmt.Printf("%s's power is over %d\n", name, power)
 }
