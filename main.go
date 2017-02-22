@@ -4,9 +4,17 @@ import (
 	"fmt"
 )
 
+type Saiyan struct {
+	Name  string
+	Power int
+}
 
 func main() {
-	name, power := "Matt", 9000
+	goku := Saiyan{"Goku", 9000}
+	Super(goku)
+	fmt.Println(goku.Power)
+}
 
-	fmt.Printf("%s's power is over %d\n", name, power)
+func Super(s Saiyan) {
+	s.Power += 10000
 }
